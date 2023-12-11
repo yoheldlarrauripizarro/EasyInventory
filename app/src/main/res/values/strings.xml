@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">EasyInventory</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_code">Product Code</string>
+    <string name="quantity">Quantity</string>
+    <string name="register_product">Register Product</string>
+    <string name="product_list">Product List</string>
+    <string name="description">Description</string>
+    <string name="provider_contact">Provider Contact</string>
+    <string name="details">Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="product_details">Product Details</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
 </resources>
