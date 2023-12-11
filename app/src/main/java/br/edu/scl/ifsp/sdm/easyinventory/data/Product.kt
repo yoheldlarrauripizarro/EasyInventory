@@ -2,7 +2,6 @@ package br.edu.scl.ifsp.sdm.easyinventory.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.util.UUID
 
 @Entity
 data class Product(

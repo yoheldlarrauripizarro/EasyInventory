@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import br.edu.scl.ifsp.sdm.easyinventory.data.Product
 import br.edu.scl.ifsp.sdm.easyinventory.databinding.ProductCellBinding
 
-    abstract class ProductAdapter: RecyclerView.Adapter<ProductAdapter.ProductViewHolder>(),
+    class ProductAdapter: RecyclerView.Adapter<ProductAdapter.ProductViewHolder>(),
     Filterable {
 
     var listener: ProductListener?=null

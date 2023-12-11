@@ -45,6 +45,9 @@ class ProductListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        configureRecyclerView()
+
         val menuHost: MenuHost= requireActivity()
 
         menuHost.addMenuProvider(object : MenuProvider {
@@ -52,8 +55,6 @@ class ProductListFragment : Fragment() {
                 // Add menu items here
                 menuInflater.inflate(R.menu.main_menu, menu)
                 val searchView = menu.findItem(R.id.searchIt).actionView as SearchView
-
-                44
                 searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                     override fun onQueryTextSubmit(p0: String?): Boolean {
                         TODO("Not yet implemented")
@@ -82,7 +83,7 @@ class ProductListFragment : Fragment() {
             }
         }
 
-        val recyclerView = binding.recyclerview
+        val recyclerView = binding.productListRv
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         productAdapter = ProductAdapter()
         recyclerView.adapter = productAdapter

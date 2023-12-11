@@ -13,7 +13,6 @@ import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import br.edu.scl.ifsp.sdm.easyinventory.R
 import br.edu.scl.ifsp.sdm.easyinventory.data.Product
@@ -38,7 +37,6 @@ class ProductDetailsFragment: Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        33
         // Inflate the layout for this fragment
         _binding = FragmentProductDetailsBinding.inflate(inflater, container, false)
         return binding.root
@@ -61,6 +59,7 @@ class ProductDetailsFragment: Fragment() {
             }
         }
         val menuHost: MenuHost = requireActivity()
+
         menuHost.addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 // Add menu items here
